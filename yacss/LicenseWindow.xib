@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LicenseWindowController" customModule="yams" customModuleProvider="target">
+            <connections>
+                <outlet property="licenseTextView" destination="BW6-c4-lcW" id="wKa-YP-KNa"/>
+                <outlet property="licenseView" destination="My4-KQ-8Q6" id="1gO-9q-V5Q"/>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="UFu-D8-Xbe"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="License Agreement" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="568" height="643"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="568" height="643"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView wantsLayer="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My4-KQ-8Q6">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="643"/>
+                        <clipView key="contentView" id="HOr-1U-mFA">
+                            <rect key="frame" x="1" y="1" width="566" height="641"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView editable="NO" importsGraphics="NO" richText="NO" usesFontPanel="YES" findStyle="bar" allowsCharacterPickerTouchBarItem="NO" allowsNonContiguousLayout="YES" textCompletion="NO" id="BW6-c4-lcW">
+                                    <rect key="frame" x="0.0" y="0.0" width="566" height="641"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="566" height="641"/>
+                                    <size key="maxSize" width="566" height="10000000"/>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="NE7-zd-xFJ">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="g0q-LT-6dd">
+                            <rect key="frame" x="551" y="1" width="16" height="641"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="My4-KQ-8Q6" secondAttribute="trailing" id="AfJ-gn-xor"/>
+                    <constraint firstAttribute="bottom" secondItem="My4-KQ-8Q6" secondAttribute="bottom" id="Ncr-P1-RvW"/>
+                    <constraint firstItem="My4-KQ-8Q6" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="odc-l0-fLo"/>
+                    <constraint firstItem="My4-KQ-8Q6" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="vcw-DG-PqO"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="134" y="291.5"/>
+        </window>
+    </objects>
+</document>
